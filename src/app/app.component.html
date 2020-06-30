@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<main>
+  <p><a href="https://coryrylan.com/blog/theming-angular-apps-with-css-custom-properties">Blog Post</a></p>
+
+  <section>
+    <app-card>
+      Card 1
+    </app-card>
+    <app-card>
+      Card 2
+    </app-card>
+    <app-card>
+      Card 3
+    </app-card>
+  </section>
+
+  <label for="darkTheme">Dark Theme</label>
+  <input id="darkTheme" type="checkbox" [formControl]="darkTheme">
+</main>

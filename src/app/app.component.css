@@ -1,0 +1,11 @@
+main {
+  padding: 12px;
+  height: 100vh;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+  margin-bottom: 12px;
+}
