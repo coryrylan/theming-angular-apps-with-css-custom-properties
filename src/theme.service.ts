@@ -22,8 +22,8 @@ export class ThemeService {
     this.setTheme(lightTheme);
   }
 
-  private setTheme(theme: {}) {
-    Object.keys(theme).forEach(k =>
+  private setTheme(theme: any) {
+    Object.keys(theme).forEach((k: string) =>
       document.documentElement.style.setProperty(`--${k}`, theme[k])
     );
   }
