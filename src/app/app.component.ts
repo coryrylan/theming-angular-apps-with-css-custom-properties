@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
-
-import { ThemeService } from './theme.service';
+import { ThemeService } from '../theme.service';
+import { CardComponent } from '../card/card.component';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'my-app',
+  standalone: true,
+  providers: [ThemeService],
+  includes: [CardComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
